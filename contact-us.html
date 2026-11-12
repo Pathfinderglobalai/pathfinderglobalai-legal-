@@ -363,6 +363,31 @@
     .pf-footer-social-row { align-items:flex-start; flex-direction:column; }
   }
 </style>
+
+<style id="pf-header-footer-refinement-2026">
+/* Consistent, single-line laptop navigation and a larger original footer brand. */
+@media (min-width:901px){
+  .nav-inner{gap:18px;}
+  .nav-logo img{height:58px;max-width:260px;object-fit:contain;}
+  .nav-links{gap:clamp(12px,1.25vw,20px);min-width:0;}
+  .nav-links a{white-space:nowrap;font-size:13px;flex-shrink:0;}
+  .nav .btn{flex-shrink:0;padding:10px 14px;}
+  header.site-nav{gap:14px;}
+  header.site-nav .brand{flex-shrink:1;min-width:0;}
+  header.site-nav .brand-logo-img{max-width:clamp(150px,20vw,245px);height:auto;object-fit:contain;}
+  header.site-nav nav.links{gap:clamp(12px,1.25vw,20px);font-size:13px;min-width:0;}
+  header.site-nav nav.links a{white-space:nowrap;flex-shrink:0;}
+  header.site-nav nav.links .cta{padding:9px 12px;}
+  .pf-legal-nav{gap:14px 24px;}
+  .pf-legal-nav a{white-space:nowrap;}
+}
+.pf-footer-grid{grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);}
+.pf-footer-brandmark{display:flex;align-items:center;gap:16px;}
+.pf-footer-logo{width:160px;height:auto;max-width:45%;object-fit:contain;flex-shrink:0;}
+.pf-footer-brandmark span{font-size:clamp(18px,1.6vw,23px);line-height:1.2;}
+@media(max-width:850px){.pf-footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.pf-footer-grid{grid-template-columns:1fr 1fr;}.pf-footer-brandmark{gap:12px;}.pf-footer-logo{width:135px;max-width:45%;}.pf-footer-brandmark span{font-size:18px;}}
+</style>
 </head>
 <body>
 
