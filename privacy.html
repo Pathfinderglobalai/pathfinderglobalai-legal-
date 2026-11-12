@@ -235,6 +235,16 @@ header.pf-unified-header{position:relative;top:auto;left:auto;right:auto;z-index
 /* Keep original homepage hero from being pushed too far down by the new normal-flow header. */
 body:has(>header.pf-unified-header) .hero{padding-top:90px;}
 </style>
+
+<style id="pf-header-brand-size-type-2026">
+/* Match the user's larger reference wordmark and serif navigation lettering. */
+.pf-unified-header .pf-header-brand{max-width:none;flex:0 0 auto;}
+.pf-unified-header .pf-header-brand img{width:clamp(300px,27vw,365px);max-width:100%;height:auto;max-height:none;object-fit:contain;}
+.pf-unified-header .pf-header-links{font-family:Georgia,'Times New Roman',serif;gap:clamp(14px,1.5vw,25px);}
+.pf-unified-header .pf-header-links a{font-family:Georgia,'Times New Roman',serif;font-size:clamp(16px,1.2vw,18px);font-weight:400;letter-spacing:0;}
+@media(max-width:1450px){.pf-unified-header .pf-header-inner{flex-wrap:wrap;justify-content:center;gap:6px 20px;}.pf-unified-header .pf-header-links{flex-basis:100%;justify-content:center;gap:6px clamp(18px,2.3vw,30px);}}
+@media(max-width:600px){.pf-unified-header .pf-header-brand img{width:min(330px,90vw);}.pf-unified-header .pf-header-links a{font-size:16px;}}
+</style>
 </head>
 <body>
 
