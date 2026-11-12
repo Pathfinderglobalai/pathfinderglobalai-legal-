@@ -253,6 +253,13 @@ body:has(>header.pf-unified-header) .hero{padding-top:90px;}
 @media(max-width:1450px){.pf-unified-header .pf-header-links{gap:2px clamp(10px,1.05vw,16px);}}
 @media(max-width:600px){.pf-unified-header .pf-header-links{gap:2px 12px;}}
 </style>
+
+<style id="pf-header-balanced-links-2026">
+/* Spread navigation evenly across its available width, without changing branding. */
+.pf-unified-header .pf-header-links{justify-content:space-between;column-gap:clamp(12px,1.5vw,24px);row-gap:4px;width:100%;}
+@media(max-width:1450px){.pf-unified-header .pf-header-links{justify-content:space-evenly;column-gap:clamp(12px,1.5vw,24px);}}
+@media(max-width:600px){.pf-unified-header .pf-header-links{justify-content:space-evenly;column-gap:14px;}}
+</style>
 </head>
 <body>
 
